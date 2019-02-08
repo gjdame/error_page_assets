@@ -10,7 +10,7 @@ end
 
 Rake::Task['assets:clobber'].enhance ['assets:clobber:error_pages']
 
-
+namespace :hello do
 namespace :assets do
   def log msg
     # try to log like Sprockets even though their stuff is all private
@@ -49,5 +49,6 @@ namespace :assets do
       end
     end
   end
+end
 end
 
